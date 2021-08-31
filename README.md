@@ -1,7 +1,7 @@
 # AES Keygen
 The AES Keygen scripts demonstrates use of the EaaS API (https://www.qrypt.com/docs/eaas) to download Quantum Random, and convert that random to AES keys.  It will output a CSV file, each row being a keys and IV.
 
-## How to Use
+## Installation and Usage
 ### Install Dependencies 
 
 This script utilizes curl, jq, xxd.  These must be installed, e.g. for Debian based machines: 
