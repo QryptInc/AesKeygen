@@ -15,7 +15,8 @@ curl "https://api-eus.qrypt.com/api/v1/quantum-entropy?size=100" \
     | base64 --decode \
     > tmp.qrand
 
-len=$(stat -ffz %s tmp.qrand)
+#for OSX, len=$(stat -f %z tmp.qrand) 
+len=$(stat -c %s tmp.qrand)
  
 echo "KEY, IV" > $outFile
 
