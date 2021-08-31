@@ -30,3 +30,7 @@ testKeys=1
 
 The script itself is aes-key.sh, no parameters necessary.  
 
+## Notes
+
+Tested on Ubuntu 20.04.3 LTS
+
