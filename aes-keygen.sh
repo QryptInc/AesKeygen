@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 apiToken=**COPY API TOKEN**
 outFile=outfile.csv
@@ -15,7 +15,7 @@ curl "https://api-eus.qrypt.com/api/v1/quantum-entropy?size=100" \
     | base64 --decode \
     > tmp.qrand
 
-len=$(stat -c %s tmp.qrand)
+len=$(stat -ffz %s tmp.qrand)
  
 echo "KEY, IV" > $outFile
 
